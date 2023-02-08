@@ -1,0 +1,120 @@
+% LaTeX Template
+% Version 1.0 (27/04/2019)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Class by Felipe Portales-Oliva (f.portales.oliva@gmail.com) with template 
+% content and modifications by Vel (vel@LaTeXTemplates.com)
+%
+% Template (this file) License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	12pt, % Default font size, values between 10pt-12pt are allowed
+	%letterpaper, % Uncomment for US letter paper size
+	%spanish, % Uncomment for Spanish
+]{fphw}
+
+% Template-specific packages
+\usepackage{multicol}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{mathpazo} % Use the Palatino font
+
+\usepackage{graphicx} % Required for including images
+
+\usepackage{booktabs} % Required for better horizontal rules in tables
+
+\usepackage{listings} % Required for insertion of code
+
+\usepackage{enumerate} % To modify the enumerate environment
+
+\usepackage{xcolor}
+
+\definecolor{mGreen}{rgb}{0,0.6,0}
+\definecolor{mGray}{rgb}{0.5,0.5,0.5}
+\definecolor{mPurple}{rgb}{0.58,0,0.82}
+\definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{CStyle}{
+    backgroundcolor=\color{backgroundColour},   
+    commentstyle=\color{mGreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{mGray},
+    stringstyle=\color{mPurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    language=C
+}
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{OS 2022 Problem Sheet \#6} % Assignment title
+
+\author{Joshua Law} % Student name
+
+\date{October 20th, 2022} % Due date
+
+\institute{Jacobs University Bremen \\ Bachelor Of Computer Science} % Institute or school name
+
+\class{CO-562 Operating Systems} % Course or class name
+
+\professor{Dr. Jurgen Schonwalder} % Professor or teacher in charge of the assignment
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Output the assignment title, created automatically using the information in the custom commands above
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT CONTENT
+%----------------------------------------------------------------------------------------
+
+\section*{Problem 6.1: \emph{scheduling strategies}}
+
+\begin{problem}
+A computer system with a single CPU has to execute n = 6 processes A, ... , F . The arrival times and the execution times of the processes are given by the following table
+\begin{enumerate}[\itshape a)\normalfont]
+
+\item Draw the schedule for the scheduling strategies first-come first-served (FCFS), shortest processing time first (SPTF), longest processing time first (LPTF), and round robin (RR) with a time slice of 1 time unit. Assume that arrivals happen before a scheduling point and that new processes are added at the end of the run queue.
+\item For each schedule, calculate the average turnaround time t and the average waiting time w.\end{enumerate}
+\end{problem}
+%------------------------------------------------
+
+\subsection*{Answer}\begin{table}
+
+    \begin{tabular}{l|c|r} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+        \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3}\\
+        $\alpha$ & $\beta$ & $\gamma$ \\
+        \hline
+        A & 1110.1 & a\\
+        B & 10.1 & b\\
+        C & 23.113231 & c\\
+    \end{tabular}
+wtf
+\end{table}
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
